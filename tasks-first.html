@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>V2 - Oppgaver først</title>
+    <meta name="theme-color" content="#f5a000" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <div class="status-bar">
+        <span>03:06</span>
+        <div class="status-icons"><span>LTE</span><span>WiFi</span><span>100%</span></div>
+      </div>
+      <header class="brand-header">
+        <div class="brand-badge">🐝</div>
+        <div class="brand-title">
+          <strong>Birøkter Registeret</strong>
+          <span>Jørn Richard Thoresen</span>
+        </div>
+      </header>
+      <div class="action-bar">
+        <a class="scan-link" href="./index.html"><span>⌘</span><span>SKANN</span></a>
+        <button class="pill-button" type="button">LOGG UT</button>
+      </div>
+
+      <section class="content space-y-4">
+        <div class="flex items-center justify-between px-1">
+          <div>
+            <p class="text-sm font-bold text-slate-500">God morgen Jørn 👋</p>
+            <h1 class="text-[1.7rem] font-black tracking-tight">Oppgaver først</h1>
+          </div>
+          <span class="meta-chip">Halden 12°</span>
+        </div>
+
+        <div class="lek-card">
+          <div class="flex items-center justify-between">
+            <div>
+              <h2 class="text-xl font-black">Dagens oppgaver</h2>
+              <p class="mt-1 text-sm text-slate-500">Hva bør jeg gjøre i dag?</p>
+            </div>
+            <span class="meta-chip">Høy prioritet</span>
+          </div>
+          <div class="task-list mt-4">
+            <button class="task-item text-left" data-task-toggle type="button">
+              <span class="checkmark"></span>
+              <span class="task-copy"><strong>Kontroller KUBE-001</strong><span>Anbefalt innen 3 dager på grunn av lang tid siden siste inspeksjon.</span></span>
+            </button>
+            <button class="task-item text-left" data-task-toggle type="button">
+              <span class="checkmark"></span>
+              <span class="task-copy"><strong>Registrer inspeksjon</strong><span>Oppdater dagens observasjoner mens de er ferske.</span></span>
+            </button>
+            <button class="task-item text-left" data-task-toggle type="button">
+              <span class="checkmark"></span>
+              <span class="task-copy"><strong>Kontroller skattekasse</strong><span>Svermesesongen tilsier rask kontroll av plassbehov.</span></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-card lek-card">
+          <p class="section-label">Birøkterassistent</p>
+          <h2 class="text-2xl font-black">🐝 Hei Jørn.</h2>
+          <p class="mt-2 text-[0.98rem] leading-6 text-slate-600">
+            Vær, årstid og tidligere registreringer peker på én ting: sjekk KUBE-001 før helgen og planlegg neste varroatelling om 5 dager.
+          </p>
+          <div class="simple-list mt-4">
+            <div class="list-row"><div class="list-copy"><strong>Svermesesongen er aktiv</strong><span>Se etter dronningceller og vurder å gi mer plass.</span></div></div>
+            <div class="list-row"><div class="list-copy"><strong>Neste trekk er lovende</strong><span>Fint tidspunkt for en kort inspeksjon senere i dag.</span></div></div>
+          </div>
+          <button class="pill-button mt-5" type="button">Vis alle anbefalinger</button>
+        </div>
+
+        <div class="lek-card">
+          <h2 class="text-xl font-black">Hurtigvalg</h2>
+          <div class="quick-grid mt-4">
+            <a class="action-tile primary" href="./assistant-first.html"><span class="text-2xl">+</span><span>Ny inspeksjon</span></a>
+            <a class="action-tile soft-green" href="./verktoykasse.html"><span class="text-2xl">◎</span><span>VarroaScan™</span></a>
+            <a class="action-tile soft-red" href="./ai-focus.html"><span class="text-2xl">+</span><span>Sykdomsveileder</span></a>
+            <a class="action-tile soft-blue" href="./dashboard.html"><span class="text-2xl">#</span><span>Etiketter</span></a>
+          </div>
+        </div>
+      </section>
+
+      <nav class="bottom-nav">
+        <a class="nav-item active" href="./tasks-first.html"><span class="nav-icon"></span><span>Min side</span></a>
+        <a class="nav-item" href="./assistant-first.html"><span class="nav-icon"></span><span>Bigårder</span></a>
+        <a class="nav-item" href="./dashboard.html"><span class="nav-icon"></span><span>Bikuber</span></a>
+        <a class="nav-item" href="./verktoykasse.html"><span class="nav-icon"></span><span>Innstillinger</span></a>
+      </nav>
+    </main>
+  </body>
+</html>

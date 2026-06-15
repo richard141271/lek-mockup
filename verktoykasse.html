@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Verktøykasse</title>
+    <meta name="theme-color" content="#f5a000" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <div class="status-bar">
+        <span>03:06</span>
+        <div class="status-icons"><span>LTE</span><span>WiFi</span><span>100%</span></div>
+      </div>
+      <header class="brand-header">
+        <div class="brand-badge">🐝</div>
+        <div class="brand-title">
+          <strong>Birøkter Registeret</strong>
+          <span>Jørn Richard Thoresen</span>
+        </div>
+      </header>
+      <div class="action-bar">
+        <a class="scan-link" href="./index.html"><span>⌘</span><span>SKANN</span></a>
+        <button class="pill-button" type="button">LOGG UT</button>
+      </div>
+
+      <section class="content space-y-4">
+        <div class="lek-card">
+          <p class="section-label">Verktøykasse</p>
+          <h1 class="text-[1.7rem] font-black tracking-tight">Aktive moduler</h1>
+          <p class="mt-2 text-[0.97rem] leading-6 text-slate-500">
+            Test om LEK bør bygges som en enkel kjerne med valgfrie verktøy. Trykk på bryterne for å slå moduler av og på visuelt.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="meta-chip"><span data-active-count>3</span> aktive</span>
+            <a class="meta-chip" href="./index.html">Til mockupene</a>
+          </div>
+        </div>
+
+        <div class="lek-card">
+          <div class="module-row">
+            <div class="module-copy">
+              <strong><span data-module-marker>✅</span> Birøkterassistent</strong>
+              <span>Kjernen som forklarer hva brukeren bør gjøre i dag.</span>
+            </div>
+            <button class="toggle is-on" type="button" role="switch" aria-checked="true" data-module="assistent" data-default="on"></button>
+          </div>
+          <div class="module-row">
+            <div class="module-copy">
+              <strong><span data-module-marker>✅</span> Sykdomsveileder</strong>
+              <span>Veiledning for symptomer og raske tiltak ute i bigården.</span>
+            </div>
+            <button class="toggle is-on" type="button" role="switch" aria-checked="true" data-module="sykdom" data-default="on"></button>
+          </div>
+          <div class="module-row">
+            <div class="module-copy">
+              <strong><span data-module-marker>✅</span> VarroaScan™</strong>
+              <span>Bildeflyt og forslag knyttet til midd og overvåking.</span>
+            </div>
+            <button class="toggle is-on" type="button" role="switch" aria-checked="true" data-module="varroa" data-default="on"></button>
+          </div>
+          <div class="module-row">
+            <div class="module-copy">
+              <strong><span data-module-marker>⬜</span> Honninglager Pro</strong>
+              <span>Utvidelse for batcher, lager og leveranser.</span>
+            </div>
+            <button class="toggle" type="button" role="switch" aria-checked="false" data-module="honning" data-default="off"></button>
+          </div>
+          <div class="module-row">
+            <div class="module-copy">
+              <strong><span data-module-marker>⬜</span> AI-Sykdomsdiagnose</strong>
+              <span>Mer avansert bildeforståelse og vurderinger med usikkerhet.</span>
+            </div>
+            <button class="toggle" type="button" role="switch" aria-checked="false" data-module="diagnose" data-default="off"></button>
+          </div>
+          <div class="module-row">
+            <div class="module-copy">
+              <strong><span data-module-marker>⬜</span> Pollinatoranalyse</strong>
+              <span>Miljø- og blomstringsinnsikt rundt bigårdene.</span>
+            </div>
+            <button class="toggle" type="button" role="switch" aria-checked="false" data-module="pollinator" data-default="off"></button>
+          </div>
+          <div class="module-row">
+            <div class="module-copy">
+              <strong><span data-module-marker>⬜</span> Dronningavl Pro</strong>
+              <span>Planlegging og oppfølging av dronninglinjer.</span>
+            </div>
+            <button class="toggle" type="button" role="switch" aria-checked="false" data-module="dronning" data-default="off"></button>
+          </div>
+        </div>
+
+        <div class="lek-card">
+          <p class="section-label">Produktidé</p>
+          <div class="simple-list">
+            <div class="list-row"><div class="list-copy"><strong>Fast kjerne</strong><span>Assistenten og oppgavene kan være standard for alle brukere.</span></div></div>
+            <div class="list-row"><div class="list-copy"><strong>Valgfrie moduler</strong><span>Mer avanserte verktøy kan skrus på når behovet oppstår.</span></div></div>
+            <div class="list-row"><div class="list-copy"><strong>Lav terskel</strong><span>Nye birøktere ser bare det de trenger, ikke hele systemet samtidig.</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="bottom-nav">
+        <a class="nav-item" href="./index.html"><span class="nav-icon"></span><span>Min side</span></a>
+        <a class="nav-item" href="./assistant-first.html"><span class="nav-icon"></span><span>Bigårder</span></a>
+        <a class="nav-item" href="./dashboard.html"><span class="nav-icon"></span><span>Bikuber</span></a>
+        <a class="nav-item active" href="./verktoykasse.html"><span class="nav-icon"></span><span>Innstillinger</span></a>
+      </nav>
+    </main>
+  </body>
+</html>

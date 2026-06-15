@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>LEK-Biens Vokter - Mockuper</title>
+    <meta name="theme-color" content="#f5a000" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              soft: "0 6px 18px rgba(35, 43, 57, 0.06)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <div class="status-bar">
+        <span>03:06</span>
+        <div class="status-icons"><span>LTE</span><span>WiFi</span><span>100%</span></div>
+      </div>
+      <header class="brand-header">
+        <div class="brand-badge">🐝</div>
+        <div class="brand-title">
+          <strong>Birøkter Registeret</strong>
+          <span>Jørn Richard Thoresen</span>
+        </div>
+      </header>
+      <div class="action-bar">
+        <a class="scan-link" href="./index.html"><span>⌘</span><span>SKANN</span></a>
+        <button class="pill-button" type="button">LOGG UT</button>
+      </div>
+
+      <section class="content space-y-4">
+        <div class="lek-card">
+          <p class="section-label">LEK-Biens Vokter</p>
+          <h1 class="text-3xl font-black tracking-tight">Prototype-lab</h1>
+          <p class="mt-2 text-[0.96rem] leading-6 text-slate-500">
+            Utforsk fire ulike hjemmeflater og en egen verktøykasse. Alle skjermene er rene frontend-mockuper for å teste stil, flyt og hva brukeren bør gjøre i dag.
+          </p>
+        </div>
+
+        <div class="weather-banner lek-card">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="text-sm font-bold text-white/80">God morgen Jørn 👋</p>
+              <h2 class="mt-2 text-2xl font-black">Været i Halden</h2>
+              <p class="mt-1 text-white/80">Delvis skyet, rolig trekk fra kl. 12</p>
+            </div>
+            <div class="rounded-2xl bg-white/15 px-4 py-3 text-3xl font-black">12°</div>
+          </div>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="meta-chip">Vind 2.6 m/s</span>
+            <span class="meta-chip">Luftfuktighet 67%</span>
+            <span class="meta-chip">Neste trekk kl. 12:40</span>
+          </div>
+        </div>
+
+        <div class="mock-grid">
+          <a class="mock-link" href="./assistant-first.html">
+            <strong>V1 - Assistent først</strong>
+            <span>Stor anbefalingsmodul øverst og raske valg under.</span>
+          </a>
+          <a class="mock-link" href="./tasks-first.html">
+            <strong>V2 - Oppgaver først</strong>
+            <span>Dagens oppgaver prioriteres før assistenten.</span>
+          </a>
+          <a class="mock-link" href="./dashboard.html">
+            <strong>V3 - Dashboard</strong>
+            <span>Tradisjonell appvisning med KPI-kort og assistent nederst.</span>
+          </a>
+          <a class="mock-link" href="./ai-focus.html">
+            <strong>V4 - AI-fokus</strong>
+            <span>Opplevelse som en erfaren birøkter ved siden av deg.</span>
+          </a>
+        </div>
+
+        <a class="mock-link" href="./verktoykasse.html">
+          <strong>Verktøykasse</strong>
+          <span>Test en kjerne med valgfrie moduler som kan slås av og på visuelt.</span>
+        </a>
+
+        <div class="lek-card">
+          <p class="section-label">Designretning</p>
+          <div class="simple-list">
+            <div class="list-row"><div class="list-copy"><strong>Ikke et register</strong><span>Skjermene er formulert som en personlig assistent, ikke et skjema.</span></div></div>
+            <div class="list-row"><div class="list-copy"><strong>Mobil først</strong><span>Layout og navigasjon er tilpasset iPhone-bredde og PWA-følelse.</span></div></div>
+            <div class="list-row"><div class="list-copy"><strong>Lik LEK-ramme</strong><span>Header og footer etterligner dagens app visuelt for gjenkjennelse.</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="bottom-nav">
+        <a class="nav-item active" href="./index.html"><span class="nav-icon"></span><span>Min side</span></a>
+        <a class="nav-item" href="./dashboard.html"><span class="nav-icon"></span><span>Bigårder</span></a>
+        <a class="nav-item" href="./assistant-first.html"><span class="nav-icon"></span><span>Bikuber</span></a>
+        <a class="nav-item" href="./verktoykasse.html"><span class="nav-icon"></span><span>Innstillinger</span></a>
+      </nav>
+    </main>
+  </body>
+</html>
