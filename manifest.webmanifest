@@ -1,0 +1,10 @@
+{
+  "name": "LEK-Biens Vokter™ (Mockup)",
+  "short_name": "LEK Mockup",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#eef1f5",
+  "theme_color": "#f5a000",
+  "lang": "no",
+  "description": "Ren frontend-prototype for LEK-Biens Vokter™ (ingen backend)."
+}

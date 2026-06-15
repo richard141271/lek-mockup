@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Innstillinger</title>
+    <meta name="theme-color" content="#f5a000" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <div class="status-bar">
+        <span>03:06</span>
+        <div class="status-icons"><span>LTE</span><span>WiFi</span><span>100%</span></div>
+      </div>
+      <header class="brand-header">
+        <div class="brand-badge">🐝</div>
+        <div class="brand-title">
+          <strong>Birøkter Registeret</strong>
+          <span>Jørn Richard Thoresen</span>
+        </div>
+      </header>
+      <div class="action-bar">
+        <a class="scan-link" href="./index.html"><span>⌘</span><span>SKANN</span></a>
+        <button class="pill-button" type="button">LOGG UT</button>
+      </div>
+
+      <section class="content space-y-4">
+        <div class="lek-card">
+          <p class="section-label">Min Profil</p>
+          <h1 class="text-[1.7rem] font-black tracking-tight">Jørn Richard Thoresen</h1>
+          <p class="mt-1 text-[0.97rem] leading-6 text-slate-500">Rascheprangen 1, 1767 HALDEN</p>
+          <p class="mt-1 text-[0.97rem] leading-6 text-slate-500">47372406 • richard141271@icloud.com</p>
+        </div>
+
+        <button class="settings-button" type="button">Endre/oppdatere profil</button>
+
+        <div class="settings-list">
+          <a class="settings-item" href="./verktoykasse.html">
+            <span class="settings-left">
+              <span class="settings-ico">🧰</span>
+              <span>
+                Verktøykasse
+                <span class="settings-sub">Aktiver verktøy som vises på Min Side</span>
+              </span>
+            </span>
+            <span class="chev">›</span>
+          </a>
+        </div>
+
+        <div>
+          <p class="section-label">Mine Dokumenter & Oppdrag</p>
+          <div class="settings-list">
+            <a class="settings-item" href="./settings.html">
+              <span class="settings-left">
+                <span class="settings-ico">👥</span>
+                <span>Kontakter</span>
+              </span>
+              <span class="chev">›</span>
+            </a>
+            <a class="settings-item" href="./settings.html">
+              <span class="settings-left">
+                <span class="settings-ico">🛡️</span>
+                <span>Tilganger</span>
+              </span>
+              <span class="chev">›</span>
+            </a>
+            <a class="settings-item" href="./settings.html">
+              <span class="settings-left">
+                <span class="settings-ico">📄</span>
+                <span>Referater</span>
+              </span>
+              <span class="chev">›</span>
+            </a>
+            <a class="settings-item" href="./settings.html">
+              <span class="settings-left">
+                <span class="settings-ico">✍️</span>
+                <span>Signering</span>
+              </span>
+              <span class="chev">›</span>
+            </a>
+            <a class="settings-item" href="./settings.html">
+              <span class="settings-left">
+                <span class="settings-ico">🗄️</span>
+                <span>Arkiv</span>
+              </span>
+              <span class="chev">›</span>
+            </a>
+            <a class="settings-item" href="./settings.html">
+              <span class="settings-left">
+                <span class="settings-ico">🧾</span>
+                <span>Mine Oppdrag</span>
+              </span>
+              <span class="chev">›</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <nav class="bottom-nav">
+        <a class="nav-item" href="./assistant-first.html"><span class="nav-icon"></span><span>Min side</span></a>
+        <a class="nav-item" href="./tasks-first.html"><span class="nav-icon"></span><span>Bigårder</span></a>
+        <a class="nav-item" href="./dashboard.html"><span class="nav-icon"></span><span>Bikuber</span></a>
+        <a class="nav-item active" href="./settings.html"><span class="nav-icon"></span><span>Innstillinger</span></a>
+      </nav>
+    </main>
+  </body>
+</html>

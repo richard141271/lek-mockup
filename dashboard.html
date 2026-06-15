@@ -6,7 +6,9 @@
     <title>V3 - Dashboard</title>
     <meta name="theme-color" content="#f5a000" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
   </head>
   <body>
     <main class="app-shell">
@@ -73,6 +75,14 @@
         </div>
 
         <div class="lek-card">
+          <div class="flex items-center justify-between gap-3">
+            <h2 class="text-xl font-black">Min Side (arbeidsbenk)</h2>
+            <a class="meta-chip" href="./verktoykasse.html">Verktøykasse</a>
+          </div>
+          <div class="tool-grid mt-4" data-min-side-tools></div>
+        </div>
+
+        <div class="lek-card">
           <p class="section-label">Birøkterassistent</p>
           <h2 class="text-2xl font-black">🐝 Neste trekk</h2>
           <p class="mt-2 text-[0.97rem] leading-6 text-slate-600">
@@ -86,7 +96,7 @@
         <a class="nav-item active" href="./dashboard.html"><span class="nav-icon"></span><span>Min side</span></a>
         <a class="nav-item" href="./assistant-first.html"><span class="nav-icon"></span><span>Bigårder</span></a>
         <a class="nav-item" href="./tasks-first.html"><span class="nav-icon"></span><span>Bikuber</span></a>
-        <a class="nav-item" href="./verktoykasse.html"><span class="nav-icon"></span><span>Innstillinger</span></a>
+        <a class="nav-item" href="./settings.html"><span class="nav-icon"></span><span>Innstillinger</span></a>
       </nav>
     </main>
   </body>

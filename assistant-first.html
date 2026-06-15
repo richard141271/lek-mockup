@@ -6,6 +6,7 @@
     <title>V1 - Assistent først</title>
     <meta name="theme-color" content="#f5a000" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./app.js"></script>
   </head>
@@ -65,6 +66,13 @@
               <div class="list-row"><div class="list-copy"><strong>Neste varroatelling om 5 dager</strong><span>Fint vindu før neste varmeperiode.</span></div></div>
             </div>
             <button class="pill-button mt-1" type="button">Vis alle anbefalinger</button>
+            <div class="lek-card border-amber-200 bg-white/70 p-4" data-aurora-suggest="varroascan">
+              <p class="section-label">Aurora foreslår</p>
+              <p class="text-[0.97rem] leading-6 text-slate-600">
+                Du har registrert flere varroatester. Vil du aktivere LEK-VarroaScan™?
+              </p>
+              <a class="pill-button mt-4 block text-center" href="./verktoykasse.html?activate=varroascan#tool-varroascan">Aktiver</a>
+            </div>
           </div>
         </div>
 
@@ -90,13 +98,11 @@
         </div>
 
         <div class="lek-card">
-          <h2 class="text-xl font-black">Hurtigvalg</h2>
-          <div class="quick-grid mt-4">
-            <a class="action-tile primary" href="./assistant-first.html"><span class="text-2xl">+</span><span>Ny inspeksjon</span></a>
-            <a class="action-tile soft-green" href="./verktoykasse.html"><span class="text-2xl">◎</span><span>VarroaScan™</span></a>
-            <a class="action-tile soft-red" href="./ai-focus.html"><span class="text-2xl">+</span><span>Sykdomsveileder</span></a>
-            <a class="action-tile soft-blue" href="./dashboard.html"><span class="text-2xl">#</span><span>Etiketter</span></a>
+          <div class="flex items-center justify-between gap-3">
+            <h2 class="text-xl font-black">Min Side (arbeidsbenk)</h2>
+            <a class="meta-chip" href="./verktoykasse.html">Verktøykasse</a>
           </div>
+          <div class="tool-grid mt-4" data-min-side-tools></div>
         </div>
       </section>
 
@@ -104,7 +110,7 @@
         <a class="nav-item active" href="./assistant-first.html"><span class="nav-icon"></span><span>Min side</span></a>
         <a class="nav-item" href="./tasks-first.html"><span class="nav-icon"></span><span>Bigårder</span></a>
         <a class="nav-item" href="./dashboard.html"><span class="nav-icon"></span><span>Bikuber</span></a>
-        <a class="nav-item" href="./verktoykasse.html"><span class="nav-icon"></span><span>Innstillinger</span></a>
+        <a class="nav-item" href="./settings.html"><span class="nav-icon"></span><span>Innstillinger</span></a>
       </nav>
     </main>
   </body>
