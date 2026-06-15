@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
   </head>
   <body>
     <main class="app-shell">
@@ -28,7 +29,7 @@
       </div>
 
       <section class="content space-y-4">
-        <div class="assistant-focus lek-card">
+        <div class="assistant-focus lek-card" data-ai-root>
           <div>
             <p class="section-label">AI-fokus</p>
             <h1 class="text-[2rem] font-black leading-tight">🐝 LEK-Assistent</h1>
@@ -48,9 +49,14 @@
             </div>
 
             <div class="stack-2">
-              <button class="pill-button primary-button" type="button">Start inspeksjon</button>
-              <button class="secondary-button" type="button">Se begrunnelse</button>
-              <button class="secondary-button" type="button">Still et spørsmål</button>
+              <button class="pill-button primary-button" type="button" data-ai-action="start-inspection">Start inspeksjon</button>
+              <button class="secondary-button" type="button" data-ai-action="show-reason">Se begrunnelse</button>
+              <button class="secondary-button" type="button" data-ai-action="ask-question">Still et spørsmål</button>
+            </div>
+
+            <div class="lek-card border-slate-200 bg-white/80 p-4 hidden" data-ai-result>
+              <p class="section-label">Klar til inspeksjon</p>
+              <div class="space-y-2" data-ai-result-content></div>
             </div>
 
             <div class="info-note">
@@ -59,6 +65,13 @@
           </div>
         </div>
       </section>
+
+      <div class="mockup-overlay hidden" data-ai-overlay>
+        <div class="mockup-sheet" data-ai-sheet>
+          <div class="mockup-sheet__bar"></div>
+          <div class="mockup-sheet__body" data-ai-sheet-body></div>
+        </div>
+      </div>
 
       <nav class="bottom-nav">
         <a class="nav-item active" href="./ai-focus.html"><span class="nav-icon"></span><span>Min side</span></a>
